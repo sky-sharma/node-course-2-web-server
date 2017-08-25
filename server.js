@@ -42,6 +42,10 @@ app.get('/about', (request, response) => {
   response.render('about.hbs', {pageTitle: 'About Page'});
 });
 
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {pageTitle: 'Projects Page'});
+});
+
 // /bad - send back json with errorMessage
 app.get('/bad', (request, response) => {
   // response.send('<h1>Hello Express!</h1>');
